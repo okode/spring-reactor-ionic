@@ -1,7 +1,7 @@
 package com.okode.sri.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.time.Instant;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.okode.sri.service.DateService;
 
+import reactor.core.publisher.Flux;
+
 @RestController
 @RequestMapping("/date")
 public class DateController {
-
-    private static final Logger log = LoggerFactory.getLogger(DateController.class);
     
     private DateService dateService;
     
@@ -22,9 +22,9 @@ public class DateController {
         this.dateService = dateService;
     }
     
-    @GetMapping("/now")
-    public long now() {
-        log.info("Processing request for 'now' controller");
+    // Produces: text/event-stream | application/stream+json
+    @GetMapping(path = "/now", produces = "application/stream+json")
+    public Flux<Instant> now() {
         return dateService.now();
     }
     
