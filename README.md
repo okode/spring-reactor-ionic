@@ -1,2 +1,4 @@
-# spring-reactor-ionic
-Spring Reactor WebFlux, Server Side Events and Ionic2 Frontend
+Spring Reactor Ionic
+====================
+
+Spring Reactor WebFlux, Server Side Events and Ionic2 Frontend.
