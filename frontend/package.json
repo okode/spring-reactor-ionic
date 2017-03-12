@@ -29,6 +29,7 @@
     "zone.js": "0.7.2"
   },
   "devDependencies": {
+    "@angular/tsc-wrapped": "0.5.2",
     "@ionic/app-scripts": "1.1.4",
     "typescript": "2.2.1"
   },
