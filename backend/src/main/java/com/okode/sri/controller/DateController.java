@@ -25,11 +25,9 @@ public class DateController {
         this.dateService = dateService;
     }
 
-    // Produces: text/event-stream | application/stream+json
-    @GetMapping(path = "/now/{durationSeconds}", produces = "text/event-stream")
+    @GetMapping(path = "/now/{durationSeconds}", produces = { "text/event-stream", "application/stream+json", "application/json" } )
     public Flux<Instant> now(@PathVariable int durationSeconds) {
         return dateService.now(durationSeconds);
     }
 
-    
 }

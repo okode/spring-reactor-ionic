@@ -7,5 +7,6 @@
 <ion-content padding>
 
 <button ion-button [disabled]="subscribeDisabled" (click)="subscribe()">Subscribe</button><br>
-{{instant}}
+Seconds: {{instant.epochSecond}}<br>
+Nanos: {{instant.nano}}
 </ion-content>

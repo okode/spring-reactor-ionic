@@ -52,3 +52,23 @@ $ ionic build browser
 ```
 $ ionic serve
 ```
+
+* Testing with curl
+
+Retrieving all results as JSON array (blocking):
+
+```
+$ curl -H "Accept: application/json" http://localhost:8080/date/now/2
+```
+
+Retrieving all results as text/event-stream (default content type, non blocking)
+
+```
+$ curl http://localhost:8080/date/now/2
+```
+
+Retrieving all results as application/stream+json (non blocking)
+
+```
+$ curl -H "Accept: application/stream+json" http://localhost:8080/date/now/2
+```

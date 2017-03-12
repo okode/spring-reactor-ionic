@@ -7,14 +7,14 @@ import { DOM as rxdom } from 'rx-dom';
 })
 export class HomePage {
 
-  private instant: string;
+  private instant = { epochSecond: 0, nano: 0 };
   private subscribeDisabled = false;
 
   subscribe() {
     if (this.subscribeDisabled) return;
     this.subscribeDisabled = true;
     rxdom.fromEventSource<string>('http://localhost:8080/date/now/5').subscribe(
-      value => { this.instant = value; },
+      value => { this.instant = JSON.parse(value); },
       exception => { this.subscribeDisabled = false; },
       () => { this.subscribeDisabled = false; }
     );
