@@ -1,6 +1,8 @@
 Spring Reactor Ionic
 ====================
 
+[![Build Status](https://travis-ci.org/okode/spring-reactor-ionic.svg?branch=master)](https://travis-ci.org/okode/spring-reactor-ionic)
+
 Spring Reactor WebFlux, Server Side Events and Ionic2 Frontend.
 
 Requirements
