@@ -14,9 +14,8 @@ export class HomePage {
     if (this.subscribeDisabled) return;
     this.subscribeDisabled = true;
     rxdom.fromEventSource<string>('http://localhost:8080/date/now/5').subscribe(
-      value => { this.instant = JSON.parse(value); },
-      exception => { this.subscribeDisabled = false; },
-      () => { this.subscribeDisabled = false; }
+      data => { this.instant = JSON.parse(data); },
+      exception => { this.subscribeDisabled = false; }
     );
   }
 
