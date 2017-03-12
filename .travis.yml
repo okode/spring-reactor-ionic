@@ -13,5 +13,5 @@ before_install:
 - nvm install 7
 - npm install -g ionic cordova
 script:
-- cd frontend && yarn install && ionic platform add browser && ionic build browser cd ..
+- cd frontend && yarn install && ionic platform add browser && ionic build browser && cd ..
 - cd backend && ./gradlew bootRepackage && cd ..
