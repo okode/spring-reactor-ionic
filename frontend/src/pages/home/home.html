@@ -6,6 +6,6 @@
 
 <ion-content padding>
 
-<button ion-button (click)="subscribe()">Subscribe</button><br>
+<button ion-button [disabled]="subscribeDisabled" (click)="subscribe()">Subscribe</button><br>
 {{instant}}
 </ion-content>
