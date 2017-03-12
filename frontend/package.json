@@ -31,6 +31,7 @@
   "devDependencies": {
     "@angular/tsc-wrapped": "0.5.2",
     "@ionic/app-scripts": "1.1.4",
+    "@types/rx-dom": "7.0.0",
     "typescript": "2.2.1"
   },
   "cordovaPlugins": [],
