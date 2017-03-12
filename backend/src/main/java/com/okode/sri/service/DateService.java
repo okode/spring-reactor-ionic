@@ -10,8 +10,8 @@ import reactor.core.publisher.Flux;
 @Service
 public class DateService {
     
-    public Flux<Instant> now() {
-        return Flux.interval(Duration.ofMillis(30)).map(i -> Instant.now());
+    public Flux<Instant> now(int durationSeconds) {
+        return Flux.interval(Duration.ofMillis(30)).map(i -> Instant.now()).take(Duration.ofSeconds(durationSeconds));
     }
     
 }
