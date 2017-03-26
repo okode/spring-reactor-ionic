@@ -50,6 +50,22 @@
   dependencies:
     tsickle "^0.2"
 
+"@ionic-native/core@3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-3.2.4.tgz#deba86746f571b42f23025e234a07483105511e8"
+
+"@ionic-native/keyboard@3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@ionic-native/keyboard/-/keyboard-3.2.4.tgz#d892d81ae59c76b745fb86627bc1f52c70d9061c"
+
+"@ionic-native/splash-screen@3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-3.2.4.tgz#a4791502b53e99a83e4001462fa10886e9c200c0"
+
+"@ionic-native/status-bar@3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-3.2.4.tgz#9d3c468bde56f94eafad9db6235849da787888b6"
+
 "@ionic/app-scripts@1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@ionic/app-scripts/-/app-scripts-1.1.4.tgz#470ba1ff66d40c32681c04747c8147f3b0628e74"
@@ -83,9 +99,9 @@
     ws "1.1.1"
     xml2js "^0.4.17"
 
-"@ionic/storage@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ionic/storage/-/storage-2.0.0.tgz#28b7fb4deda642bcbdd037f9c95946828552103d"
+"@ionic/storage@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ionic/storage/-/storage-2.0.1.tgz#bb1a8c276007d008d7acdda426b56065b0fd3c0b"
   dependencies:
     "@types/localforage" "0.0.30"
     localforage "~1.4.2"
@@ -1672,15 +1688,9 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ionic-angular@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-2.2.0.tgz#5c48212d4c491626863ddce9292af0d3e6e2adca"
-
-ionic-native@2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/ionic-native/-/ionic-native-2.8.1.tgz#6e5b883933aa5878528a1b65f2ed75e697984646"
-  dependencies:
-    rxjs "5.0.1"
+ionic-angular@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/ionic-angular/-/ionic-angular-2.3.0.tgz#28adadbe8c54dd5eda8e113cdd18819474e42c71"
 
 ionicons@3.0.0:
   version "3.0.0"
