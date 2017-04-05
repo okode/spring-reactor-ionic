@@ -38,6 +38,15 @@ $ cd backend
 $ ./gradlew bootRun
 ```
 
+or
+
+```
+$ cd backend
+$ ./gradlew bootJar
+$ cd build/libs
+$ ./backend-[VERSION].jar
+```
+
 * Frontend build & run
 
 ```
