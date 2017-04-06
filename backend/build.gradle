@@ -21,7 +21,7 @@ bootJar {
     launchScript {
         included = true
     }
-    excludeDevtools = false
+    excludeDevtools = true 
 }
 
 version = '0.0.1'
