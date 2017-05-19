@@ -2,7 +2,6 @@ package com.okode.sri.controller;
 
 import java.time.Instant;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +19,6 @@ public class DateController {
     
     private DateService dateService;
     
-    @Autowired
     public DateController(DateService dateService) {
         this.dateService = dateService;
     }
