@@ -3,7 +3,7 @@ Spring Reactor Ionic
 
 [![Build Status](https://travis-ci.org/okode/spring-reactor-ionic.svg?branch=master)](https://travis-ci.org/okode/spring-reactor-ionic)
 
-Spring Reactor WebFlux, Server Side Events and Ionic2 Frontend.
+Spring Reactor WebFlux, Server Side Events and Ionic Frontend with RxJS / Angular.
 
 Requirements
 ------------
@@ -20,12 +20,11 @@ $ brew update ; brew upgrade
 $ brew cask install java
 ```
 
-* Ionic2
+* Ionic
 
 ```
-$ brew install node yarn
-$ npm update -g
-$ npm install -g ionic cordova ios-sim ios-deploy
+$ brew install node yarn ios-sim ios-deploy
+$ yarn global add ionic cordova
 ```
 
 Building and Running
@@ -52,14 +51,8 @@ $ ./backend-[VERSION].jar
 ```
 $ cd frontend
 $ yarn install
-$ ionic platform add browser
-$ ionic build browser
-```
-
-* Testing
-
-```
-$ ionic serve
+$ ionic cordova platform add ios --nofetch
+$ ionic cordova emulate ios
 ```
 
 * Testing with curl
