@@ -21,9 +21,15 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @GetMapping(path = "/date/now/{durationSeconds}", produces = { "text/event-stream", "application/stream+json", "application/json" } )
+    @GetMapping(path     = "/date/now/{durationSeconds}",
+                produces = { "text/event-stream",
+                             "application/stream+json",
+                             "application/json" } )
     public Flux<Instant> now(@PathVariable int durationSeconds) {
-        return Flux.interval(Duration.ofMillis(30)).map(i -> Instant.now()).take(Duration.ofSeconds(durationSeconds));
+        return Flux
+            .interval(Duration.ofMillis(30))
+            .map(i -> Instant.now())
+            .take(Duration.ofSeconds(durationSeconds));
     }
     
 }
