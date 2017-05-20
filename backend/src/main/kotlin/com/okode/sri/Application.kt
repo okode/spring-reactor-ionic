@@ -21,12 +21,10 @@ class Application {
                     "text/event-stream",
                     "application/stream+json",
                     "application/json"))
-    fun now(@PathVariable durationSeconds: Long): Flux<Instant> {
-        return Flux
-                .interval(Duration.ofMillis(30))
-                .map { _ -> Instant.now() }
-                .take(Duration.ofSeconds(durationSeconds))
-    }
+    fun now(@PathVariable durationSeconds: Long) = Flux
+            .interval(Duration.ofMillis(30))
+            .map { _ -> Instant.now() }
+            .take(Duration.ofSeconds(durationSeconds))
 
 }
 
