@@ -5,8 +5,8 @@ buildscript {
     }
     dependencies {
         classpath('org.springframework.boot:spring-boot-gradle-plugin:2.0.0.M1')
-        classpath('org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.2')
-        classpath('org.jetbrains.kotlin:kotlin-allopen:1.1.2')
+        classpath('org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.2-4')
+        classpath('org.jetbrains.kotlin:kotlin-allopen:1.1.2-4')
     }
 }
 
@@ -31,8 +31,8 @@ bootJar {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-webflux')
-    compile('org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2')
-    compile('org.jetbrains.kotlin:kotlin-reflect:1.1.2')
+    compile('org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2-4')
+    compile('org.jetbrains.kotlin:kotlin-reflect:1.1.2-4')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
