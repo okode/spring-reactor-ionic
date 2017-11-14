@@ -23,8 +23,8 @@ $ brew cask install java
 * Ionic
 
 ```
-$ brew install node yarn ios-sim ios-deploy
-$ yarn global add ionic cordova
+$ brew install node ios-sim ios-deploy
+$ npm install -g ionic cordova
 ```
 
 Building and Running
@@ -50,7 +50,7 @@ $ ./backend-[VERSION].jar
 
 ```
 $ cd frontend
-$ yarn install
+$ npm install
 $ ionic cordova platform add ios --nofetch
 $ ionic cordova emulate ios
 ```

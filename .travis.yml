@@ -6,14 +6,12 @@ addons:
     sources:
     - sourceline: deb https://dl.yarnpkg.com/debian/ stable main
       key_url: https://dl.yarnpkg.com/debian/pubkey.gpg
-    packages:
-    - yarn
 before_install:
 - export LANG=en_US.UTF-8
 - nvm install 7
 - npm install -g ionic cordova
 script:
-- cd frontend && yarn install && ionic platform add browser && ionic build browser && cd ..
+- cd frontend && npm install && ionic platform add browser && ionic build browser && cd ..
 - cd backend && ./gradlew bootJar && cd ..
 notifications:
   email:
